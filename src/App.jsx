@@ -31,6 +31,7 @@ function App() {
         </p>
       </div>
       <div className="container text-gradient">Las tarjetas de personajes</div>
+      test de git 
     </>
   );
 }
