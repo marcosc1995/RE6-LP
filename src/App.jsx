@@ -30,7 +30,7 @@ function App() {
           personaje.
         </p>
       </div>
-      <div className="container">Las tarjetas de personajes</div>
+      <div className="container text-gradient">Las tarjetas de personajes</div>
     </>
   );
 }
