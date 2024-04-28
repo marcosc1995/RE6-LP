@@ -4,13 +4,14 @@
   padding: 2rem;
   text-align: center;
 } */
+
 body {
   font-family: "Roboto Serif", sans-serif;
   /* font-weight: 100; */
   margin: 0;
   padding: 0;
   text-align: center;
-  height: 3000px;
+  /* height: 3000px; */
   overflow: auto;
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -41,7 +42,7 @@ body {
   font-size: 40px;
   /* border: 1px solid red; */
 }
-.character-list{
+.character-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -52,12 +53,17 @@ body {
   /* font-size: 90px; */
   font-weight: 400;
   background: #7d7bb7;
-  background: linear-gradient(to top, rgb(125, 123, 183) 0%, #cacae6 50%, #5f63e4 100%);
+  background: linear-gradient(
+    to top,
+    rgb(125, 123, 183) 0%,
+    #cacae6 50%,
+    #5f63e4 100%
+  );
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .bg-img {
-  opacity: 2%;
+  opacity: 1%;
   width: 940px;
   height: 940px;
   position: fixed;
@@ -72,7 +78,7 @@ body {
   margin-bottom: 65px;
   height: 380px;
 }
-.presentation{
+.presentation {
   margin-bottom: 200px;
 }
 .presentation p {
@@ -82,8 +88,40 @@ body {
   width: 840px;
   margin-bottom: 40px;
 }
-.presentation h2{
+.presentation h2 {
   margin-top: 300px;
   margin-bottom: 30px;
   font-size: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 30px;
+  }
+  .sub-title {
+    font-size: 20px;
+    width: 300px;
+    margin: auto;
+  }
+  .presentation h2 {
+    font-size: 30px;
+  }
+  .presentation p {
+    font-size: 15px;
+    width: 300px;
+  }
+  .residentEvil6-logo {
+    margin-bottom: 30px;
+  }
+  .requires{
+    margin-top: 20px;
+  }
+  .bg-img {
+    opacity: 4%;
+    top: 35%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px; /* Negative half of height. */
+    margin-left: -200px;
+  }
 }

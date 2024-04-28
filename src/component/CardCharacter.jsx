@@ -10,16 +10,20 @@ function CardCharacter() {
   return (
     <div className="card">
       <h2 className="text-gradient character-name">CHRIST SAMURAI</h2>
-      <h3 className="text-gradient sub-title-card">REQUIRES:</h3>
-      <div className="requires">
-        Finalizar un escenario con rango A o superior con Leon.
-      </div>
-      <h3 className="text-gradient sub-title-card">WEAPONS:</h3>
-      <div className="weapon-list">
-        <WeaponPill/>
-        <WeaponPill/>
-        <WeaponPill/>
-
+      <div className="card-info">
+        <div className="requires">
+          <h3 className="text-gradient sub-title-card">REQUIRES:</h3>
+          <p>Finalizar un escenario con rango A o superior con Leon.</p>
+        </div>
+        <div className="weapons">
+          <h3 className="text-gradient sub-title-card">WEAPONS:</h3>
+          <div className="weapon-list">
+            <WeaponPill />
+            <WeaponPill />
+            <WeaponPill />
+            <WeaponPill />
+          </div>
+        </div>
       </div>
       <img className="imgCharacter" src={christ} alt="" />
       <div className="line-name"></div>

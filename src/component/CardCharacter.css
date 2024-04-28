@@ -28,21 +28,21 @@
   background: linear-gradient(
     90deg,
     rgb(125, 123, 183) 0%,
-    #cacae686 50%,
-    #5f63e4 100%
+    #cacae64d 50%,
+    #5f63e456 100%
   );
 }
-.requires {
+
+.requires p {
   margin-bottom: 14px;
   margin-left: 50px;
   width: 240px;
   font-size: 16px;
-  /* color: red; */
 }
 .weapon-list {
   position: relative;
   /* border: 1px solid red; */
-  width: 300px;
+  width: 70%;
   /* height: 80px; */
   margin-left: 50px;
   z-index: 3;
@@ -50,7 +50,7 @@
   justify-content: space-between;
 }
 .sub-title-card {
-    margin-top: 0;
+  margin-top: 0;
   margin-left: 50px;
   font-size: 16px;
 }
@@ -64,4 +64,33 @@
   bottom: 0;
   right: 0;
   /* z-index: 1; */
+}
+
+@media only screen and (max-width: 600px) {
+  .card-info{
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .line-name{
+    top: 30px;
+    width: 250px;
+  }
+  .card {
+    /* height: 660px; */
+    min-height: 700px;
+  }
+  .character-name {
+    font-size: 30px;
+  }
+  .imgCharacter{
+    width: 280px;
+    height: 280px;
+    top: 50px;
+    left: 65px;
+
+  }
+  .weapon-list{
+    flex-wrap: wrap;
+  }
 }
