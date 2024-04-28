@@ -81,13 +81,14 @@
     min-height: 700px;
   }
   .character-name {
+    padding-left: 20px;
     font-size: 30px;
   }
   .imgCharacter{
     width: 280px;
     height: 280px;
     top: 50px;
-    left: 65px;
+    left: 18px;
 
   }
   .weapon-list{
