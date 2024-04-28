@@ -1,0 +1,67 @@
+.card {
+  color: white;
+  width: 600px;
+  height: 300px;
+  /* margin: auto; */
+  margin: 35px;
+  position: relative;
+  border-radius: 10px;
+  background-color: #030216b9;
+  text-align: start;
+  /* margin-top: 100px; */
+  /* margin-bottom: 500px; */
+}
+.character-name {
+  margin: 0 0 5px 0;
+  padding: 15px 0 0 50px;
+  font-size: 40px;
+  position: relative;
+  z-index: 3;
+}
+.line-name {
+  position: absolute;
+  top: 35px;
+  right: 5px;
+  height: 0.7px;
+  /* margin-top: 5px; */
+  width: 400px;
+  background: linear-gradient(
+    90deg,
+    rgb(125, 123, 183) 0%,
+    #cacae6 50%,
+    #5f63e4 100%
+  );
+}
+.requires {
+  margin-bottom: 14px;
+  margin-left: 50px;
+  width: 240px;
+  font-size: 16px;
+  /* color: red; */
+}
+.weapon-list {
+  position: relative;
+  /* border: 1px solid red; */
+  width: 300px;
+  /* height: 80px; */
+  margin-left: 50px;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+}
+.sub-title-card {
+    margin-top: 0;
+  margin-left: 50px;
+  font-size: 16px;
+}
+.img-container {
+  border: 1px solid red;
+  z-index: 1;
+}
+.imgCharacter {
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* z-index: 1; */
+}

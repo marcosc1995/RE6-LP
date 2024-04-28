@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  height: 2000px;
+  height: 3000px;
   overflow: auto;
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -41,13 +41,18 @@ body {
   font-size: 40px;
   /* border: 1px solid red; */
 }
+.character-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .text-gradient {
   /* margin: 0;
   padding: 0; */
   /* font-size: 90px; */
   font-weight: 400;
   background: #7d7bb7;
-  background: linear-gradient(to top, #7d7bb7 0%, #cacae6 50%, #5f63e4 100%);
+  background: linear-gradient(to top, rgb(125, 123, 183) 0%, #cacae6 50%, #5f63e4 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -66,6 +71,9 @@ body {
   margin-top: 130px;
   margin-bottom: 65px;
   height: 380px;
+}
+.presentation{
+  margin-bottom: 200px;
 }
 .presentation p {
   margin: auto;

@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import umbrella from "./img/Umbrella.png";
 import RE6 from "./img/RE6-logo-M.png";
+import CardCharacter from "./component/CardCharacter";
 import "./App.css";
 
 function App() {
@@ -30,8 +31,14 @@ function App() {
           personaje.
         </p>
       </div>
-      <div className="container text-gradient">Las tarjetas de personajes</div>
-      test de git 
+      {/* <div className="container text-gradient">Las tarjetas de personajes</div> */}
+      <div className="character-list">
+      <CardCharacter/>
+      <CardCharacter/>
+      <CardCharacter/>
+      <CardCharacter/>
+      </div>
+      
     </>
   );
 }
