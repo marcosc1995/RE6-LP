@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import umbrella from "./img/Umbrella.png";
 import RE6 from "./img/RE6-logo-M.png";
 import CardCharacter from "./component/CardCharacter";
+import CardWeapon from "./component/CardWeapon";
 import "./App.css";
 
 function App() {
@@ -31,14 +32,22 @@ function App() {
           personaje.
         </p>
       </div>
-      {/* <div className="container text-gradient">Las tarjetas de personajes</div> */}
       <div className="character-list">
-      <CardCharacter/>
-      <CardCharacter/>
-      <CardCharacter/>
-      <CardCharacter/>
+        <CardCharacter />
+        <CardCharacter />
+        <CardCharacter />
+        <CardCharacter />
       </div>
-      
+      <div>
+        <h2 className="text-gradient">WEAPONS</h2>
+        <div className="weapon-container">
+          <CardWeapon />
+          <CardWeapon />
+          <CardWeapon />
+          <CardWeapon />
+          <CardWeapon />
+        </div>
+      </div>
     </>
   );
 }
