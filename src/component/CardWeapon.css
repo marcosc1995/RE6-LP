@@ -1,0 +1,70 @@
+.card-weapon {
+  color: white;
+  width: 350px;
+  height: 300px;
+  /* margin: auto; */
+  margin: 35px;
+  position: relative;
+  border-radius: 10px;
+  background-color: #030216b9;
+  text-align: start;
+  padding: 10px;
+  /* margin-top: 100px; */
+  /* margin-bottom: 500px; */
+}
+.card-weapon h3{
+  margin: 5px auto;
+}
+.card-title{
+  font-size: 30px;
+  margin-left: 25px;
+}
+.card-stats{
+  margin-left: 25px;
+}
+.line-weapon {
+  position: absolute;
+  top: 50px;
+  right: 5px;
+  height: 0.7px;
+  /* margin-top: 5px; */
+  width: 250px;
+  background: linear-gradient(
+    90deg,
+    rgb(125, 123, 183) 0%,
+    #cacae64d 50%,
+    #5f63e456 100%
+  );
+  z-index: 0;
+}
+.card-weapon-image-container{
+  z-index: 3;
+}
+.card-weapon-image{
+  height: 150px;
+  position: absolute;
+  bottom: 80px;
+  right: 35px;
+  /* z-index: 1; */
+}
+
+@media only screen and (max-width: 600px) {
+ .card-weapon{
+  height: 430px;
+ }
+ .card-weapon-image{  
+  top: 100px;
+  left: 55px;
+  
+}
+.card-title{
+  font-size: 25px;
+}
+.line-weapon{
+  top: 45px;
+}
+.card-stats{
+
+  margin-top: 150px;
+}
+}

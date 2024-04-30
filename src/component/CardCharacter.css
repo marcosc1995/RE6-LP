@@ -31,6 +31,7 @@
     #cacae64d 50%,
     #5f63e456 100%
   );
+  z-index: 0;
 }
 
 .requires p {
@@ -45,7 +46,7 @@
   width: 70%;
   /* height: 80px; */
   margin-left: 50px;
-  z-index: 3;
+  z-index: 4;
   display: flex;
   justify-content: space-between;
 }
@@ -56,7 +57,7 @@
 }
 .img-container {
   border: 1px solid red;
-  z-index: 1;
+  z-index: 3;
 }
 .imgCharacter {
   height: 300px;
