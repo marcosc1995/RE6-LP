@@ -5,10 +5,30 @@ import umbrella from "./img/Umbrella.png";
 import RE6 from "./img/RE6-logo-M.png";
 import CardCharacter from "./component/CardCharacter";
 import CardWeapon from "./component/CardWeapon";
+import Modal from "./component/Modal";
 import "./App.css";
+
+const data = [
+  {
+    name: "Leon",
+    weapons: ["Elephant Killer", "Nine 9 nine", "Rocket Luncher"],
+    img: "https://i.ibb.co/cTgHwHt/leon-2.webp",
+  },
+  {
+    name: "Christ",
+    weapons: ["Elephant Killer", "Nine 9 nine", "Rocket Luncher"],
+    img: "https://i.ibb.co/6PTSQQ0/christ-1.png",
+  },
+  {
+    name: "Ada",
+    weapons: ["Elephant Killer", "Nine 9 nine", "Rocket Luncher"],
+    img: "https://i.ibb.co/NYRbXz5/ada-1.webp",
+  },
+];
 
 function App() {
   const [count, setCount] = useState(0);
+  const [characters, setCharacters] = useState(data);
 
   return (
     <>
@@ -33,10 +53,9 @@ function App() {
         </p>
       </div>
       <div className="character-list">
-        <CardCharacter />
-        <CardCharacter />
-        <CardCharacter />
-        <CardCharacter />
+        {characters.map((char) => {
+          return <CardCharacter character={char} />;
+        })}
       </div>
       <div>
         <h2 className="text-gradient">WEAPONS</h2>
@@ -47,6 +66,10 @@ function App() {
           <CardWeapon />
           <CardWeapon />
         </div>
+      </div>
+      <div>
+        <h2 className="text-gradient">MODAL</h2>
+        <Modal />
       </div>
     </>
   );
