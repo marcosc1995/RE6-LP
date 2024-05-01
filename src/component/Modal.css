@@ -7,57 +7,57 @@
   border-radius: 10px;
   position: relative;
 }
-.modal-title{
-    padding: 40px;
-    font-size: 40px;
+.modal-title {
+  padding: 40px;
+  font-size: 40px;
 }
-.modal-line{
-    position: absolute;
-    top: 65px;
-    right: 50px;
-    height: 0.7px;
-    /* margin-top: 5px; */
-    width: 550px;
-    background: linear-gradient(
-      90deg,
-      rgb(125, 123, 183) 0%,
-      #cacae64d 50%,
-      #5f63e456 100%
-    );
-    z-index: 0;
+.modal-line {
+  position: absolute;
+  top: 65px;
+  right: 50px;
+  height: 0.7px;
+  /* margin-top: 5px; */
+  width: 550px;
+  background: linear-gradient(
+    90deg,
+    rgb(125, 123, 183) 0%,
+    #cacae64d 50%,
+    #5f63e456 100%
+  );
+  z-index: 0;
 }
-.modal-line-2{
-    position: absolute;
-    top: 350px;
-    left: 150px;
-    height: 0.7px;
-    /* margin-top: 5px; */
-    width: 350px;
-    background: linear-gradient(
-      90deg,
-      rgb(125, 123, 183) 0%,
-      #cacae64d 50%,
-      #5f63e456 100%
-    );
-    z-index: 0;
+.modal-line-2 {
+  position: absolute;
+  top: 350px;
+  left: 150px;
+  height: 0.7px;
+  /* margin-top: 5px; */
+  width: 350px;
+  background: linear-gradient(
+    90deg,
+    rgb(125, 123, 183) 0%,
+    #cacae64d 50%,
+    #5f63e456 100%
+  );
+  z-index: 0;
 }
-.stat-title{
-    font-size: 30px;
+.stat-title {
+  font-size: 30px;
 }
-.stat-item{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.stat-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.stat-item-value{
-    margin: 0 40px;
-    color: white;
+.stat-item-value {
+  margin: 0 40px;
+  color: white;
 }
-.character-pill-list{
-    display: flex;
-    position: absolute;
-    top: 380px;
-    left: 150px;
+.character-pill-list {
+  display: flex;
+  position: absolute;
+  top: 380px;
+  left: 150px;
 }
 .modal-stats {
   position: absolute;
@@ -73,4 +73,53 @@
   top: 150px;
   left: 180px;
   /* z-index: 1; */
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-container {
+    width: 300px;
+  }
+  .modal-weapon-image {
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    /* z-index: 1; */
+  }
+  .character-pill-list {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .modal-line {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 0.7px;
+    /* margin-top: 5px; */
+    width: 50px;
+    background: linear-gradient(
+      90deg,
+      rgb(187, 132, 30) 0%,
+      #cacae64d 50%,
+      #5f63e456 100%
+    );
+    z-index: 0;
+  }
+  .modal-line-2 {
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    height: 0.7px;
+    /* margin-top: 5px; */
+    width: 50px;
+    background: linear-gradient(
+      90deg,
+      rgb(125, 123, 183) 0%,
+      #cacae64d 50%,
+      #5f63e456 100%
+    );
+    z-index: 0;
+  }
 }
