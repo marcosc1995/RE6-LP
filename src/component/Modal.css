@@ -133,7 +133,7 @@
   }
   .modal-container {
     width: 300px;
-    height: 800px;
+    /* height: 800px; */
   }
   .modal-weapon-image {
     /* height: 150px; */

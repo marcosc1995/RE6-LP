@@ -4,7 +4,7 @@ import CharacterPill from "./CharacterPill";
 import ElephKill from "../img/Elephant_Killer-removebg-preview.png";
 
 function Modal(props) {
-  console.log(props);
+  // console.log(props);
   if (props.open == false) {
     return null;
   }

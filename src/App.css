@@ -4,7 +4,20 @@
   padding: 2rem;
   text-align: center;
 } */
-
+.tablePts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  /* background-color: #030216b9; */
+  margin-bottom: 100px;
+}
+.tablePts table,th,td{
+  border: 1px solid rgba(100, 100, 100, 0.534);
+  background-color: #030216b9;
+}
 body {
   font-family: "Roboto Serif", sans-serif;
   /* font-weight: 100; */
@@ -100,6 +113,11 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .tablePts{
+    
+    font-size: 18px;
+    
+  }
   .title {
     font-size: 30px;
   }

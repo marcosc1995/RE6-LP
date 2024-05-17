@@ -12,6 +12,10 @@
   /* margin-top: 100px; */
   /* margin-bottom: 500px; */
 }
+.card-weapon:hover {
+  transition-duration: .5s;
+  scale: 1.1;
+}
 .card-weapon h3{
   margin: 5px auto;
 }
