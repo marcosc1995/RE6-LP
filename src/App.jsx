@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {v4 as uuid4} from 'uuid';
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import umbrella from "./img/Umbrella.png";
@@ -8,20 +9,74 @@ import CardWeapon from "./component/CardWeapon";
 import Modal from "./component/Modal";
 import "./App.css";
 
+const dataWeapons = [
+  {
+    name: "Elephant Killer",
+    img: "https://i.ibb.co/0cZcCqP/Elephant-Killer-removebg-preview.png",
+  },
+  {
+    name: "Nine 9 nine",
+    img: "https://i.ibb.co/BtNMt1S/nine-oh-nine-removebg-preview.png",
+  },
+  {
+    name: "Rocket Luncher",
+    img: "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+  },
+];
 const data = [
   {
-    name: "Leon",
-    weapons: ["Elephant Killer", "Nine 9 nine", "Rocket Luncher"],
+    name: "LEON",
+    // weapons: ["Elephant Killer", "Nine 9 nine", "Rocket Luncher"],
+    weapons: [
+      {
+        name: "Elephant Killer",
+        img: "https://i.ibb.co/0cZcCqP/Elephant-Killer-removebg-preview.png",
+      },
+      {
+        name: "Nine 9 nine",
+        img: "https://i.ibb.co/BtNMt1S/nine-oh-nine-removebg-preview.png",
+      },
+      {
+        name: "Rocket Luncher",
+        img: "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+      },
+    ],
     img: "https://i.ibb.co/cTgHwHt/leon-2.webp",
   },
   {
-    name: "Christ",
-    weapons: ["Elephant Killer", "Nine 9 nine", "Rocket Luncher"],
+    name: "CHRIST",
+    weapons: [
+      {
+        name: "Elephant Killer",
+        img: "https://i.ibb.co/0cZcCqP/Elephant-Killer-removebg-preview.png",
+      },
+      {
+        name: "Nine 9 nine",
+        img: "https://i.ibb.co/BtNMt1S/nine-oh-nine-removebg-preview.png",
+      },
+      {
+        name: "Rocket Luncher",
+        img: "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+      },
+    ],
     img: "https://i.ibb.co/6PTSQQ0/christ-1.png",
   },
   {
-    name: "Ada",
-    weapons: ["Elephant Killer", "Nine 9 nine", "Rocket Luncher"],
+    name: "ADA",
+    weapons: [
+      {
+        name: "Elephant Killer",
+        img: "https://i.ibb.co/0cZcCqP/Elephant-Killer-removebg-preview.png",
+      },
+      {
+        name: "Nine 9 nine",
+        img: "https://i.ibb.co/BtNMt1S/nine-oh-nine-removebg-preview.png",
+      },
+      {
+        name: "Rocket Luncher",
+        img: "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+      },
+    ],
     img: "https://i.ibb.co/NYRbXz5/ada-1.webp",
   },
 ];
@@ -54,7 +109,7 @@ function App() {
       </div>
       <div className="character-list">
         {characters.map((char) => {
-          return <CardCharacter character={char} />;
+          return <CardCharacter character={char} key={uuid4()} />;
         })}
       </div>
       <div>

@@ -1,4 +1,6 @@
 import React from "react";
+import { v4 as uuid4} from 'uuid'
+import { useState } from "react";
 import "./CardCharacter.css";
 import WeaponPill from "./WeaponPill";
 import leon from "../img/leon2.webp";
@@ -6,7 +8,10 @@ import sherry from "../img/sherry2.webp";
 import christ from "../img/christ2.webp";
 
 function CardCharacter(props) {
+  // const [weapons, setWeapons] = useState([1,2])
   const character = props.character
+  const weapons = character.weapons
+  // console.log(weapons)
   const texto = "Componente tarjeta";
   return (
     <div className="card">
@@ -25,10 +30,10 @@ function CardCharacter(props) {
         <div className="weapons">
           <h3 className="text-gradient sub-title-card">WEAPONS:</h3>
           <div className="weapon-list">
-            <WeaponPill />
-            <WeaponPill />
-            <WeaponPill />
-            <WeaponPill />
+            {weapons.map((weap)=> {
+              // console.log(weap)
+              return <WeaponPill weapon={weap} key={uuid4()} />
+            })}
           </div>
         </div>
       </div>
