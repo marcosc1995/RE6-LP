@@ -148,6 +148,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [characters, setCharacters] = useState(data);
   const [isOpen, setIsOpen] = useState(false)
+  const [modalContent, setModalContent] = useState('')
 
   return (
     <>
@@ -180,13 +181,13 @@ function App() {
         <h2 className="text-gradient">WEAPONS</h2>
         <div className="weapon-container">
           {dataWeapons.map((weapon) => {
-            return <CardWeapon onClick={()=> {setIsOpen(true)}} weapon={weapon} key={uuid4()} />;
+            return <CardWeapon onClick={()=> {setIsOpen(true), setModalContent(weapon)}} weapon={weapon} key={uuid4()} />;
           })}
         </div>
       </div>
       <div>
         {/* <h2 className="text-gradient">MODAL</h2> */}
-        <Modal open={isOpen} onClose={()=>{setIsOpen(false)}} />
+        <Modal content={modalContent}  open={isOpen} onClose={()=>{setIsOpen(false)}} />
       </div>
     </>
   );
