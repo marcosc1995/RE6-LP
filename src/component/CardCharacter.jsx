@@ -19,7 +19,7 @@ function CardCharacter(props) {
       <div className="card-info">
         <div className="requires">
           <h3 className="text-gradient sub-title-card">REQUIRES:</h3>
-          <p>Finalizar un escenario con rango A o superior con Leon.</p>
+          <p>{character.requires}</p>
           {/* <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cumque
             ducimus expedita illum earum odio incidunt ipsum non consequatur

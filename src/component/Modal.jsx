@@ -3,9 +3,14 @@ import "./Modal.css";
 import CharacterPill from "./CharacterPill";
 import ElephKill from "../img/Elephant_Killer-removebg-preview.png";
 
-function Modal() {
+function Modal(props) {
+  console.log(props)
+  if(props.open == false){
+    return null
+  }
   return (
     <div className="modal-container">
+      <button onClick={props.onClose} >close</button>
       <h2 className="modal-title text-gradient">ELEPHANT KILLER</h2>
       <div className="modal-stats">
         <h2 className="stat-title text-gradient">STATISTIC</h2>
@@ -34,17 +39,17 @@ function Modal() {
           <div className="stat-item-value">000000</div>
         </div>
       </div>
-      <div className="modal-line-2"></div>
-      <div className="modal-line"></div>
+      {/* <div className="modal-line-2"></div>
+      <div className="modal-line"></div> */}
 
       <div className="modal-weapon-image-container">
         <img className="modal-weapon-image" src={ElephKill} alt="" />
       </div>
-      <div className="character-pill-list">
+      {/* <div className="character-pill-list">
         <CharacterPill/>
         <CharacterPill/>
         <CharacterPill/>
-      </div>
+      </div> */}
     </div>
   );
 }

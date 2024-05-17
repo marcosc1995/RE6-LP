@@ -76,28 +76,61 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .modal-title{
+    font-size: 15px;
+    margin-bottom: 135px;
+  }
+  .modal-stats{
+    position: relative;
+    margin-left: 25px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    top: 0;
+    right: 0;
+  }
+  .stat-title {
+    font-size: 15px;
+  }
+  .stat-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .stat-item h3 {
+    font-size: 14px;
+  }
+  .stat-item-value {
+    margin: 0 40px;
+    color: white;
+  }
   .modal-container {
     width: 300px;
+    height: 800px;
   }
   .modal-weapon-image {
     height: 150px;
     position: absolute;
-    top: 0;
-    left: 0px;
+    top: 80px;
+    left: 50px;
     /* z-index: 1; */
   }
   .character-pill-list {
+    margin-top: 25px;
+    margin-left: 10px;
     display: flex;
-    position: absolute;
-    top: 0px;
+    position: relative;
+    top: 0;
+    bottom: 0px;
     left: 0px;
   }
-  .modal-line {
+  
+  /* .modal-line {
     position: absolute;
     top: 0px;
     right: 0px;
-    height: 0.7px;
-    /* margin-top: 5px; */
+    height: 0.7px;    
     width: 50px;
     background: linear-gradient(
       90deg,
@@ -106,13 +139,13 @@
       #5f63e456 100%
     );
     z-index: 0;
-  }
-  .modal-line-2 {
+  } */
+  /* .modal-line-2 {
     position: absolute;
     top: 350px;
     left: 150px;
     height: 0.7px;
-    /* margin-top: 5px; */
+    
     width: 50px;
     background: linear-gradient(
       90deg,
@@ -121,5 +154,5 @@
       #5f63e456 100%
     );
     z-index: 0;
-  }
+  } */
 }

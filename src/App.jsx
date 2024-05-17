@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {v4 as uuid4} from 'uuid';
+import { v4 as uuid4 } from "uuid";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import umbrella from "./img/Umbrella.png";
@@ -13,38 +13,100 @@ const dataWeapons = [
   {
     name: "Elephant Killer",
     img: "https://i.ibb.co/0cZcCqP/Elephant-Killer-removebg-preview.png",
+    statistic: {
+      ammo: ".500 Magnum",
+      character: ["Jake", "Sherry"],
+      altFire: "none",
+      shotPerClip: 5,
+      damage: 1.6,
+      critChance: 12.5,
+      reloadSpeed: "C",
+      firingSpeed: "C",
+    },
   },
   {
     name: "Nine 9 nine",
     img: "https://i.ibb.co/BtNMt1S/nine-oh-nine-removebg-preview.png",
+    statistic: {
+      ammo: "9MM",
+      character: ["Jake", "Christ", "Agent"],
+      altFire: "none",
+      shotPerClip: 15,
+      damage: 150,
+      critChance: 12.5,
+      reloadSpeed: "A",
+      firingSpeed: "A",
+    },
   },
   {
     name: "Rocket Luncher",
     img: "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+    statistic: {
+      ammo: "One shot per launcher",
+      character: ["Leon", "Chris"],
+      altFire: "none",
+      shotPerClip: "none",
+      damage: 30000,
+      critChance: "none",
+      reloadSpeed: "none",
+      firingSpeed: "none",
+    },
   },
 ];
 const data = [
   {
     name: "LEON",
     // weapons: ["Elephant Killer", "Nine 9 nine", "Rocket Luncher"],
+    requires: "Disponible de inicio.",
     weapons: [
       {
         name: "Elephant Killer",
         img: "https://i.ibb.co/0cZcCqP/Elephant-Killer-removebg-preview.png",
+        statistic: {
+          ammo: ".500 Magnum",
+          character: ["Jake", "Sherry"],
+          altFire: "none",
+          shotPerClip: 5,
+          damage: 1.6,
+          critChance: 12.5,
+          reloadSpeed: "C",
+          firingSpeed: "C",
+        },
       },
       {
         name: "Nine 9 nine",
         img: "https://i.ibb.co/BtNMt1S/nine-oh-nine-removebg-preview.png",
+        statistic: {
+          ammo: "9MM",
+          character: ["Jake", "Christ", "Agent"],
+          altFire: "none",
+          shotPerClip: 15,
+          damage: 150,
+          critChance: 12.5,
+          reloadSpeed: "A",
+          firingSpeed: "A",
+        },
       },
       {
         name: "Rocket Luncher",
         img: "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+        statistic: {
+          ammo: "One shot per launcher",
+          character: ["Leon", "Chris"],
+          altFire: "none",
+          shotPerClip: "none",
+          damage: 30000,
+          critChance: "none",
+          reloadSpeed: "none",
+          firingSpeed: "none",
+        },
       },
     ],
     img: "https://i.ibb.co/cTgHwHt/leon-2.webp",
   },
   {
     name: "CHRIST",
+    requires: "Disponible de inicio.",
     weapons: [
       {
         name: "Elephant Killer",
@@ -63,6 +125,7 @@ const data = [
   },
   {
     name: "ADA",
+    requires: "Finalizar la campaña de Ada.",
     weapons: [
       {
         name: "Elephant Killer",
@@ -84,6 +147,7 @@ const data = [
 function App() {
   const [count, setCount] = useState(0);
   const [characters, setCharacters] = useState(data);
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <>
@@ -115,16 +179,14 @@ function App() {
       <div>
         <h2 className="text-gradient">WEAPONS</h2>
         <div className="weapon-container">
-          <CardWeapon />
-          <CardWeapon />
-          <CardWeapon />
-          <CardWeapon />
-          <CardWeapon />
+          {dataWeapons.map((weapon) => {
+            return <CardWeapon onClick={()=> {setIsOpen(true)}} weapon={weapon} key={uuid4()} />;
+          })}
         </div>
       </div>
       <div>
-        <h2 className="text-gradient">MODAL</h2>
-        <Modal />
+        {/* <h2 className="text-gradient">MODAL</h2> */}
+        <Modal open={isOpen} onClose={()=>{setIsOpen(false)}} />
       </div>
     </>
   );

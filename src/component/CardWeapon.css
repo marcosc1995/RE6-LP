@@ -41,9 +41,11 @@
   z-index: 3;
 }
 .card-weapon-image{
-  height: 150px;
+  /* height: 150px; */
+  width: 140px;
   position: absolute;
-  bottom: 80px;
+  /* bottom: 120px; */
+  top: 100px;
   right: 35px;
   /* z-index: 1; */
 }
@@ -53,8 +55,9 @@
   height: 430px;
  }
  .card-weapon-image{  
-  top: 100px;
-  left: 55px;
+  top: 90px;
+  left: 80px;
+  width: 180px;
   
 }
 .card-title{
