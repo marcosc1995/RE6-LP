@@ -192,17 +192,17 @@ function App() {
       <div className="presentation">
         <h2 className="text-gradient">UNLOCKABLE</h2>
         <p>
-          En Resident Evil 6 podrás obtener diversos extras si cumples
-          determinados requisitos.
+          In Resident Evil 6 you can obtain various extras if you meet certain
+          requirements.
         </p>
         <p>
-          Muchos de estos extras son para el modo Mercenarios, modo que se
-          desbloquea cuando te pasas por primera vez una campaña de un
-          personaje.
+          Many of these extras are for Mercenaries mode, a mode that is unlocked
+          when you complete a character's campaign for the first time.
         </p>
       </div>
       <div className="tablePts">
-        <h2 className="text-gradient">Puntos</h2>
+        <h2 className="text-gradient">RANK POINTS</h2>
+        {/* <div className="line-pts"></div> */}
         <table>
           <tr>
             <th className="text-gradient">Rank</th>

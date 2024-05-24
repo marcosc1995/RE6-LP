@@ -60,6 +60,7 @@
   z-index: 3;
 }
 .imgCharacter {
+  mask-image: linear-gradient(black 80%,transparent);
   height: 300px;
   position: absolute;
   bottom: 0;

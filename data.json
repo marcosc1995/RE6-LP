@@ -41,6 +41,76 @@
         "reloadSpeed": "none",
         "firingSpeed": "none"
       }
+    },
+    {
+      "name": "Rocket Luncher",
+      "img": "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+      "statistic": {
+        "ammo": "One shot per launcher",
+        "character": ["Leon", "Chris"],
+        "altFire": "none",
+        "shotPerClip": "none",
+        "damage": 30000,
+        "critChance": "none",
+        "reloadSpeed": "none",
+        "firingSpeed": "none"
+      }
+    },
+    {
+      "name": "Rocket Luncher",
+      "img": "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+      "statistic": {
+        "ammo": "One shot per launcher",
+        "character": ["Leon", "Chris"],
+        "altFire": "none",
+        "shotPerClip": "none",
+        "damage": 30000,
+        "critChance": "none",
+        "reloadSpeed": "none",
+        "firingSpeed": "none"
+      }
+    },
+    {
+      "name": "Rocket Luncher",
+      "img": "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+      "statistic": {
+        "ammo": "One shot per launcher",
+        "character": ["Leon", "Chris"],
+        "altFire": "none",
+        "shotPerClip": "none",
+        "damage": 30000,
+        "critChance": "none",
+        "reloadSpeed": "none",
+        "firingSpeed": "none"
+      }
+    },
+    {
+      "name": "Rocket Luncher",
+      "img": "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+      "statistic": {
+        "ammo": "One shot per launcher",
+        "character": ["Leon", "Chris"],
+        "altFire": "none",
+        "shotPerClip": "none",
+        "damage": 30000,
+        "critChance": "none",
+        "reloadSpeed": "none",
+        "firingSpeed": "none"
+      }
+    },
+    {
+      "name": "Rocket Luncher",
+      "img": "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+      "statistic": {
+        "ammo": "One shot per launcher",
+        "character": ["Leon", "Chris"],
+        "altFire": "none",
+        "shotPerClip": "none",
+        "damage": 30000,
+        "critChance": "none",
+        "reloadSpeed": "none",
+        "firingSpeed": "none"
+      }
     }
   ]
 }
