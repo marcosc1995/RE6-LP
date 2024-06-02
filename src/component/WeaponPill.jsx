@@ -6,7 +6,7 @@ function WeaponPill(props) {
     const weaponImage = props.weapon.img
     // console.log(weapon)
     return(
-        <div className="container-image">
+        <div onClick={props.onClick} className="container-image">
             <img className="weapon-image" src={weaponImage} alt="" />
         </div>
     )

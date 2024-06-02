@@ -27,5 +27,6 @@
 @media only screen and (max-width: 600px) {
   .container-image{
     margin-top: 10px;
+    margin-bottom: 25px;
   }
 }

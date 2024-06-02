@@ -87,17 +87,17 @@
 }
 .modal-stats {
   position: absolute;
-  top: 100px;
+  top: 120px;
   right: 120px;
 }
 .modal-weapon-image-container {
   z-index: 3;
 }
 .modal-weapon-image {
-  height: 150px;
+  height: 250px;
   position: absolute;
-  top: 150px;
-  left: 180px;
+  top: 200px;
+  left: 80px;
   /* z-index: 1; */
 }
 
@@ -133,14 +133,14 @@
   }
   .modal-container {
     width: 300px;
-    height: 800px;
+    /* height: 800px; */
   }
   .modal-weapon-image {
     /* height: 150px; */
-    width: 190px;
+    height: 110px;
     position: absolute;
-    top: 80px;
-    left: 50px;
+    top: 100px;
+    left: 60px;
     /* z-index: 1; */
   }
   .character-pill-list {

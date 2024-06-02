@@ -1,0 +1,116 @@
+{
+  "dataWeapons": [
+    {
+      "name": "Elephant Killer",
+      "img": "https://i.ibb.co/0cZcCqP/Elephant-Killer-removebg-preview.png",
+      "statistic": {
+        "ammo": ".500 Magnum",
+        "character": ["Jake", "Sherry"],
+        "altFire": "none",
+        "shotPerClip": 5,
+        "damage": 1.6,
+        "critChance": 12.5,
+        "reloadSpeed": "C",
+        "firingSpeed": "C"
+      }
+    },
+    {
+      "name": "Nine 9 nine",
+      "img": "https://i.ibb.co/BtNMt1S/nine-oh-nine-removebg-preview.png",
+      "statistic": {
+        "ammo": "9MM",
+        "character": ["Jake", "Christ", "Agent"],
+        "altFire": "none",
+        "shotPerClip": 15,
+        "damage": 150,
+        "critChance": 12.5,
+        "reloadSpeed": "A",
+        "firingSpeed": "A"
+      }
+    },
+    {
+      "name": "Rocket Luncher",
+      "img": "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+      "statistic": {
+        "ammo": "One shot per launcher",
+        "character": ["Leon", "Chris"],
+        "altFire": "none",
+        "shotPerClip": "none",
+        "damage": 30000,
+        "critChance": "none",
+        "reloadSpeed": "none",
+        "firingSpeed": "none"
+      }
+    },
+    {
+      "name": "Rocket Luncher",
+      "img": "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+      "statistic": {
+        "ammo": "One shot per launcher",
+        "character": ["Leon", "Chris"],
+        "altFire": "none",
+        "shotPerClip": "none",
+        "damage": 30000,
+        "critChance": "none",
+        "reloadSpeed": "none",
+        "firingSpeed": "none"
+      }
+    },
+    {
+      "name": "Rocket Luncher",
+      "img": "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+      "statistic": {
+        "ammo": "One shot per launcher",
+        "character": ["Leon", "Chris"],
+        "altFire": "none",
+        "shotPerClip": "none",
+        "damage": 30000,
+        "critChance": "none",
+        "reloadSpeed": "none",
+        "firingSpeed": "none"
+      }
+    },
+    {
+      "name": "Rocket Luncher",
+      "img": "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+      "statistic": {
+        "ammo": "One shot per launcher",
+        "character": ["Leon", "Chris"],
+        "altFire": "none",
+        "shotPerClip": "none",
+        "damage": 30000,
+        "critChance": "none",
+        "reloadSpeed": "none",
+        "firingSpeed": "none"
+      }
+    },
+    {
+      "name": "Rocket Luncher",
+      "img": "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+      "statistic": {
+        "ammo": "One shot per launcher",
+        "character": ["Leon", "Chris"],
+        "altFire": "none",
+        "shotPerClip": "none",
+        "damage": 30000,
+        "critChance": "none",
+        "reloadSpeed": "none",
+        "firingSpeed": "none"
+      }
+    },
+    {
+      "name": "Rocket Luncher",
+      "img": "https://i.ibb.co/V3ZbG5B/Rocket-Launcher-removebg-preview.png",
+      "statistic": {
+        "ammo": "One shot per launcher",
+        "character": ["Leon", "Chris"],
+        "altFire": "none",
+        "shotPerClip": "none",
+        "damage": 30000,
+        "critChance": "none",
+        "reloadSpeed": "none",
+        "firingSpeed": "none"
+      }
+    }
+  ]
+}

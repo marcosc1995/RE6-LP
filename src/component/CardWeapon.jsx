@@ -3,8 +3,8 @@ import "./CardWeapon.css";
 import ElephKill from "../img/Elephant_Killer-removebg-preview.png";
 
 function CardWeapon(props) {
-  console.log(props.weapon.name)
-  console.log(props.weapon.statistic.ammo)
+  // console.log(props.weapon.name)
+  // console.log(props.weapon.statistic.ammo)
   return (
     <div onClick={props.onClick} className="card-weapon">
       <h2 className="card-title text-gradient">{props.weapon.name}</h2>
