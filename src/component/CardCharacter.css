@@ -80,7 +80,7 @@
   }
   .card {
     /* height: 660px; */
-    min-height: 700px;
+    min-height: 750px;
   }
   .character-name {
     padding-left: 20px;
@@ -90,10 +90,11 @@
     width: 280px;
     height: 280px;
     top: 50px;
-    left: 18px;
+    left: 35px;
 
   }
   .weapon-list{
+    margin: auto;
     flex-wrap: wrap;
   }
 }

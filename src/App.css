@@ -28,7 +28,7 @@
   width: 700px;
   margin: auto;
   border-radius: 10px;
-  margin-bottom: 150px;
+  margin-top: 150px;
   height: 800px;
   position: relative;
   /* border: 1px solid white; */
@@ -86,7 +86,11 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100, "GRAD" 0;
 } */
-
+.section-title{
+  font-size: 35px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .intro {
   margin: 0;
   padding: 0;
@@ -161,7 +165,7 @@ body {
 @media only screen and (max-width: 600px) {
   .tablePts {
     font-size: 17px;
-    width: 300px;
+    width: 320px;
     height: 700px;
   }
   .tablePts h2{
